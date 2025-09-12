@@ -1,15 +1,9 @@
+let args = process.argv.slice(2); 
 
-const speak = function (name, time){
- console.log (`${time} ${name}`)
-};
-
-speak  ('argument', 'No')
-
-const talk = function (age, month){
-    console.log (`${age} ${month}`)
-}
-talk ('Argument', 'found')
-
-const question = function (){
-    console.log ()
+if (args.length === 0) {
+  console.log("No argument");
+} else if (args.length === 1) {
+  console.log("Argument found");
+} else {
+  console.log("Arguments found");
 }
