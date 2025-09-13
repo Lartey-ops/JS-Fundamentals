@@ -3,7 +3,7 @@ let a = parseInt(args[0], 10);
 let b = parseInt(args[1], 10);
 
 function add(a, b) {
-  return x + y;
+  return a + b;
 }
 
 if (isNaN(a) || isNaN(b)) {
